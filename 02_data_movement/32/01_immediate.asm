@@ -2,6 +2,12 @@
 ; nasm -f elf32 01_immediate.asm
 ; ld -m elf_i386 01_immediate.o
 ; gdb --silent a.out
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 56e0a40d524baf473a8fe9e8f7b3c954ca00e967
 
 section .text
 global _start
