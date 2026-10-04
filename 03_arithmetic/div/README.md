@@ -4,5 +4,5 @@ For unsigned `DIV`, the status flags `CF`, `OF`, `SF`, `ZF`, `AF`, and `PF` are 
 
 | Example | Quotient | Remainder | Flags |
 | --- | --- | --- | --- |
-| `div1.asm`: `100 / 7` | `14` in `AL` | `2` in `AH` | Undefined; do not rely on any status flag. |
-| `div2.asm`: `50000 / 300` | `166` in `AX` | `200` in `DX` | Undefined; do not rely on any status flag. |
+| `div1.asm`: `100 / 7` | `14` in `AL` | `2` in `AH` | Undefined; `DIV` does not define arithmetic status flags, so any observed `CF`, `OF`, `SF`, `ZF`, `AF`, or `PF` value is not a meaningful consequence of this division. The quotient and remainder satisfy `14 * 7 + 2 = 100`. |
+| `div2.asm`: `50000 / 300` | `166` in `AX` | `200` in `DX` | Undefined; `DIV` does not define arithmetic status flags, so any observed `CF`, `OF`, `SF`, `ZF`, `AF`, or `PF` value is not a meaningful consequence of this division. The quotient and remainder satisfy `166 * 300 + 200 = 50000`. |
